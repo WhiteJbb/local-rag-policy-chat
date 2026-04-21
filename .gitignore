@@ -26,6 +26,12 @@ qdrant_data/
 .DS_Store
 Thumbs.db
 
+# Claude Code
+.claude/
+
+# Chainlit
+.chainlit/
+
 # IDE
 .vscode/
 .idea/
