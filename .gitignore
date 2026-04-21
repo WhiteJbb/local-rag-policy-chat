@@ -1,0 +1,31 @@
+# 가상환경
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# 문서 (민감한 사내 규정)
+docs/
+
+# Qdrant 로컬 데이터
+qdrant_data/
+
+# HuggingFace 캐시
+.cache/
+
+# 환경변수
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

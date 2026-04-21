@@ -1,0 +1,16 @@
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: localrag-qdrant
+    ports:
+      - "6333:6333"   # REST API
+      - "6334:6334"   # gRPC
+    volumes:
+      - qdrant_data:/qdrant/storage
+    restart: unless-stopped
+
+# Ollama는 로컬 설치본을 그대로 사용 (ollama serve)
+# 재다운로드 없이 기존 모델 활용 가능
+
+volumes:
+  qdrant_data:
